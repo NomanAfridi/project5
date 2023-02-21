@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Google fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&family=Comfortaa:wght@300&family=Luckiest+Guy&family=Nunito&family=Pacifico&family=Roboto+Condensed&family=Source+Sans+Pro&family=Ubuntu+Condensed&display=swap"
+        rel="stylesheet">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/40e07dac47.js" crossorigin="anonymous"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="imgs/logo.jpg" alt="">
+            </div>
+            <div class="navs">
+                <ul id="hemburger">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Product</a></li>
+                    <li><a href="">Store</a></li>
+                    <li><a href="">About US</a></li>
+                </ul>
+            </div>
+            <div class="cart">
+                <img src="imgs/bars.jpg" alt="" id="bar">
+            </div>
+        </nav>
+        <div class="container">
+            <div class="circle"></div>
+            <img src="imgs/model.png" alt="">
+            <p>Lorem ipsum dolor sit adipisicing elit. <br> Cum maxime s voluptatibus eos <br> nostrum nisimodi </p>
+            <h1>Less is <br> more.</h1>
+            <div class="icons">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-whatsapp"></i>
+            </div>
+        </div>
+    </header>
+    <script>
+
+        $(document).ready(function () {
+            $("#bar").click(function () {
+                $("#hemburger").slideToggle("slow");
+            });
+        });
+
+    </script>
+</body>
+
+</html>
